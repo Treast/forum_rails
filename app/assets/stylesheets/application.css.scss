@@ -1,0 +1,92 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *
+ *= require_self
+ */
+
+.date {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 14px;
+  margin-left: 45px;
+  color: #95a5a6;
+  margin-top: -15px;
+  margin-bottom: 5px;
+}
+
+body {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  background-color: #AFCAD0;
+}
+
+.clearfix {
+  clear: both;
+}
+
+header {
+  width: 960px;
+  background-color: white;
+  padding: 15px 20px;
+  margin: 0 auto;
+  border-radius: 4px;
+  margin-bottom: 40px;
+  letter-spacing: -2px;
+  h1 {
+    float: left;
+     a {
+    color: #2BB3D3;
+    text-decoration: none;
+   }
+  }
+  a {
+      color: white;
+      text-decoration: none;
+    }
+  .btn {
+    float: right;
+    font-size: 20px;
+    display: block;
+    padding: 7px 13px;
+    background-color: #2BB3D3;
+    border-radius: 4px;
+    margin-top: 20px;
+  }
+}
+
+.container {
+  margin-top: 40px;
+  width: 960px;
+  background-color: white;
+  padding: 15px 20px;
+  margin: 0 auto;
+  border-radius: 4px;
+  a {
+    transition-duration: 0.3s;
+    text-decoration: none;
+    font-size: 24px;
+    color: #2BB3D3;
+    text-transform: capitalize;
+    margin-left: 40px;
+  }
+  a:hover {
+    transition-duration: 0.3s;
+    color: #0A7892;
+  }
+  .subject {
+    color: #2BB3D3;
+  }
+  .body {
+    font-size: 1.125em;
+    margin-left: 40px;
+  }
+}

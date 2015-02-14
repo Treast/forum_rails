@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Forum</title>
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<header>
+  <h1><%= link_to 'My Forums', root_path %></h1>
+  <div class="buttons">
+    <a class="btn" href="<%= new_topic_path %>">New Topic</a>
+  </div>
+  <div class="clearfix"></div>
+</header>
+<div class="container">
+  <%= yield %>
+</div> 
+
+</body>
+</html>
