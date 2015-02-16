@@ -1,2 +1,7 @@
 <h1 class="subject"><%= @topic.subject %></h1>
 <div class="body"><%= simple_format @topic.body %></div>
+<% @topic.comments.all.each do |comment| %>
+  <p><%= comment.response %></p>
+<% end %>
+  
+<%= render 'comments/form' %>
