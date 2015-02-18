@@ -14,7 +14,7 @@
  *= require_self
  */
 
-.date {
+ .date {
   font-weight: 300;
   font-style: italic;
   font-size: 14px;
@@ -43,16 +43,18 @@ header {
   letter-spacing: -2px;
   h1 {
     float: left;
-     a {
-    color: #2BB3D3;
-    text-decoration: none;
-   }
-  }
-  a {
-      color: white;
+    a {
+      color: #2BB3D3;
       text-decoration: none;
     }
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
   .btn {
+    color: white;
     float: right;
     font-size: 20px;
     display: block;
@@ -61,6 +63,30 @@ header {
     border-radius: 4px;
     margin-top: 20px;
   }
+}
+
+textarea {
+  width: 80%;
+  height: 100px;
+}
+
+label {
+  margin-right: 30px;
+  font-size: 20px;
+  vertical-align: top;
+}
+
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 .container {
@@ -83,10 +109,33 @@ header {
     color: #0A7892;
   }
   .subject {
+    float: left;
     color: #2BB3D3;
   }
   .body {
     font-size: 1.125em;
     margin-left: 40px;
   }
+
+  .btn {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    cursor: pointer;
+    border: 0;
+    letter-spacing: -2px;
+    color: white;
+    float: right;
+    font-size: 20px;
+    display: block;
+    padding: 7px 13px;
+    background-color: #2BB3D3;
+    border-radius: 4px;
+    margin-top: 20px;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.comments {
+  
 }
