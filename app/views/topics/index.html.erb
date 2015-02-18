@@ -2,5 +2,5 @@
 
 <% @topics.each do |topic| %>
 	<p><%= link_to topic.subject, topic_path(topic) %></p>
-	<p class="date">Created <%= time_ago_in_words(topic.created_at) %> ago</p>
+	<p class="date">Created <%= time_ago_in_words(topic.created_at) %> ago by <%= topic.user.email %></p>
 <% end %>
